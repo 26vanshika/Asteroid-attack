@@ -35,4 +35,28 @@ const player = new Player({
 }
 )
 player.draw()
-console.log(player)
+//console.log(player)
+function animate(){
+    window.requestAnimationFrame(animate)
+    console.log(animate)
+}
+
+window.addEventListener("keydown" , (event) => {
+    switch(event.code){
+        case "KeyW":
+            console.log("You pressed W")
+            break
+        case "KeyA":
+            console.log("You pressed A")
+            break
+        case "KeyS":
+            console.log("You pressed S")
+            break
+        case "KeyD":
+            console.log("You pressed D")
+            break
+    }
+}
+
+
+)
